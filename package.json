@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "new:article": "npx zenn new:article",
-    "preview": "npx zenn preview"
+    "preview": "npx zenn preview",
+    "check": "npx prettier . --cache --check",
+    "format": "npx prettier . --write"
   },
   "repository": {
     "type": "git",
@@ -19,6 +21,7 @@
   },
   "homepage": "https://github.com/kotarella1110/zenn-docs#readme",
   "dependencies": {
+    "prettier": "^3.1.1",
     "zenn-cli": "^0.1.150"
   }
 }
